@@ -1,0 +1,64 @@
+.clients-list {
+  display: flex;
+
+  &-item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.clients-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 90px;
+  border: 1px solid var(--social-link-primary-color);
+  border-radius: 4px;
+
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+  }
+}
+
+.clients-icon {
+  fill: var(--social-link-primary-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .clients-link:hover &,
+  .clients-link:focus & {
+    fill: var(--accent-color);
+  }
+}
+
+.first-client {
+  width: 44px;
+  height: 49px;
+}
+
+.second-client {
+  width: 40px;
+  height: 52px;
+}
+
+.third-client {
+  width: 41px;
+  height: 42px;
+}
+
+.fourth-client {
+  width: 79px;
+  height: 42px;
+}
+
+.fifth-client {
+  width: 59px;
+  height: 47px;
+}
+
+.sixth-client {
+  width: 88px;
+  height: 45px;
+}

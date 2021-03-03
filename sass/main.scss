@@ -1,0 +1,33 @@
+//UTILS
+@import "./utils/variables";
+@import "./utils/visually-hidden";
+
+//BASE
+@import "./base/common";
+@import "./base/container";
+
+//COMPONENTS
+@import "./components/modal-btn";
+@import "./components/social-links";
+@import "./components/social-links-footer";
+@import "./components/logotype";
+@import "./components/order-btn";
+@import "./components/title";
+@import "./components/filter";
+@import "./components/mailing-btn";
+@import "./components/mailing-form";
+@import "./components/portfolio-overlay";
+@import "./components/close-modal-btn";
+@import "./components/modal-form";
+
+//LAYOUT
+@import "./layout/header";
+@import "./layout/hero";
+@import "./layout/features";
+@import "./layout/activity";
+@import "./layout/team";
+@import "./layout/clients";
+@import "./layout/footer";
+@import "./layout/portfolio";
+@import "./layout/backdrop";
+@import "./layout/modal";
