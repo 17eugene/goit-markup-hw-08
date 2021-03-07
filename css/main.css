@@ -445,11 +445,11 @@ ul[class*="list"] {
   height: 100%;
   font-weight: 400;
   font-size: 18px;
-  line-height: 1.556;
+  line-height: 1.55;
   letter-spacing: 0.03em;
-  padding: 77px 24px;
   color: var(--main-color);
   background-color: rgba(33, 150, 243, 0.9);
+  overflow: scroll;
   position: absolute;
   top: 0;
   left: 0;
@@ -460,6 +460,14 @@ ul[class*="list"] {
 .portfolio-list-link:hover .overlay-wrapper,
 .portfolio-list-link:focus .overlay-wrapper {
   transform: translateY(0);
+}
+
+@media screen and (min-width: 480px) {
+  .overlay-wrapper {
+    padding: 77px 24px;
+    overflow: visible;
+    font-size: 1.556;
+  }
 }
 
 @media screen and (min-width: 768px) {
