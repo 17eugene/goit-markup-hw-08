@@ -1,9 +1,14 @@
 .social-link-list {
-  display: flex;
-  justify-content: space-between;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
 
   &-item {
     display: flex;
+
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
   }
 }
 
@@ -35,3 +40,5 @@
     fill: var(--main-color);
   }
 }
+
+// @media screen and;

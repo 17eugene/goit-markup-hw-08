@@ -5,10 +5,14 @@
 .form-text {
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-and-nav-font-color);
+
+  @media screen and (min-width: 1200px) {
+    line-height: 1.15;
+  }
 }
 
 .modal-field-wrapper {
@@ -93,17 +97,19 @@
 
   &::placeholder {
     font-weight: 400;
-    font-size: 12px;
-    line-height: 1.667;
+    font-size: 14px;
+    line-height: 1.143;
     letter-spacing: 0.01em;
     color: rgba(117, 117, 117, 0.5);
+
+    @media screen and (min-width: 1200px) {
+      font-size: 12px;
+      line-height: 1.167;
+    }
   }
 }
 
 .policy-wrapper {
-  width: 425px;
-  margin-left: auto;
-  margin-right: auto;
   margin-bottom: 30px;
 }
 
@@ -117,8 +123,8 @@
   align-items: center;
 
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.714;
+  font-size: 12px;
+  line-height: 1.167;
   letter-spacing: 0.03em;
   color: var(--description-color);
 
@@ -143,6 +149,13 @@
       background-origin: border-box;
       border: 1px solid var(--accent-color);
     }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .checkbox-label {
+    font-size: 14px;
+    line-height: 1.714;
   }
 }
 

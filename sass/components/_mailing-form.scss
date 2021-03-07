@@ -1,28 +1,22 @@
 .mailing-form-wrapper {
-  display: flex;
-  align-items: flex-end;
-  margin-top: 12px;
+  text-align: center;
 }
 
 .mailing-label {
+  display: block;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.143;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #ffffff;
-  margin-bottom: 20px;
-}
-
-.email-area-wrapper {
-  display: flex;
-  flex-direction: column;
-  margin-right: 12px;
+  color: var(--main-color);
 }
 
 .mailing-input {
-  width: 358px;
+  width: 100%;
   height: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 
   padding-left: 15px;
 
@@ -44,5 +38,37 @@
 
   &:focus {
     border: 1px solid var(--hover-button-color);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .mailing-container {
+    min-width: 450px;
+    margin-left: 166px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .mailing-input {
+    width: 358px;
+    padding-left: 15px;
+    margin-bottom: 0;
+  }
+
+  .mailing-form-wrapper {
+    display: flex;
+    text-align: left;
+    align-items: flex-end;
+    padding-top: 12px;
+  }
+
+  .mailing-container {
+    margin-left: 0;
+  }
+
+  .email-area-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-right: 12px;
   }
 }

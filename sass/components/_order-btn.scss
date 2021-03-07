@@ -16,5 +16,6 @@
   &:hover,
   &:focus {
     background-color: var(--hover-button-color);
+    outline: none;
   }
 }

@@ -68,6 +68,9 @@
         rgba(47, 48, 58, 0.4)
       ),
       url(../../images/desktop-images/bg_images/bg@1x.jpg);
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   @media screen and (min-device-pixel-ratio: 2),
@@ -85,7 +88,7 @@
 
 @media screen and (min-width: 1200px) {
   .hero-container {
-    text-align: center;
+    // text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
     max-width: 629px;

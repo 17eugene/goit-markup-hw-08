@@ -5,8 +5,8 @@
   font-size: 18px;
   line-height: 1.556;
   letter-spacing: 0.03em;
-  padding: 63px 24px;
-  color: #ffffff;
+  padding: 77px 24px;
+  color: var(--main-color);
   background-color: rgba(33, 150, 243, 0.9);
 
   position: absolute;
@@ -19,5 +19,17 @@
   .portfolio-list-link:hover &,
   .portfolio-list-link:focus & {
     transform: translateY(0);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .overlay-wrapper {
+    padding: 49px 24px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .overlay-wrapper {
+    padding: 63px 24px;
   }
 }

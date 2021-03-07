@@ -1,7 +1,7 @@
 .icon-container {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   height: 120px;
   background-color: var(--bg-color-secondary);
   border-radius: 4px;
@@ -13,23 +13,103 @@
   height: 70px;
 }
 
-.features-list {
-  display: flex;
+.features-list-item {
+  width: 100%;
+  max-width: 450px;
+}
 
-  &-item {
-    width: 270px;
-    height: auto;
+.features-list-title {
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--title-and-nav-font-color);
+}
 
-    &:not(:last-child) {
-      margin-right: 30px;
-    }
-  }
+.features-list-description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  color: var(--description-color);
+}
 
-  &-description {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.714;
-    letter-spacing: 0.03em;
-    color: var(--description-color);
+@media screen and (max-width: 767px) {
+  .features-list-item:not(:last-child) {
+    margin-bottom: 30px;
   }
 }
+
+@media screen and (min-width: 768px) {
+  .features-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    margin: -15px;
+
+    &-item {
+      width: calc((100% - 60px) / 2);
+      margin: 15px;
+    }
+
+    &-title {
+      text-align: left;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .icon-container {
+    height: 120px;
+  }
+
+  .features-list {
+    flex-wrap: nowrap;
+
+    &-item {
+      width: 270px;
+      height: auto;
+    }
+  }
+}
+
+// .icon-container {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   height: 120px;
+//   background-color: var(--bg-color-secondary);
+//   border-radius: 4px;
+//   margin-bottom: 30px;
+// }
+
+// .feature-icon {
+//   width: 70px;
+//   height: 70px;
+// }
+
+// .features-list {
+//   display: flex;
+
+//   &-item {
+//     width: 270px;
+//     height: auto;
+
+//     &:not(:last-child) {
+//       margin-right: 30px;
+//     }
+//   }
+
+//   &-description {
+//     font-weight: 400;
+//     font-size: 14px;
+//     line-height: 1.714;
+//     letter-spacing: 0.03em;
+//     color: var(--description-color);
+//   }
+// }

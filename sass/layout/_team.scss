@@ -1,8 +1,15 @@
 .team {
   background-color: var(--bg-color-secondary);
 
-  &-member-list {
-    display: flex;
+  &-element {
+    background: var(--main-color);
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+  }
+
+  &-member {
+    width: 100%;
   }
 
   &-member-title {
@@ -22,25 +29,40 @@
     color: var(--description-color);
     margin-bottom: 16px;
   }
-
-  &-element {
-    width: calc((100% - 90px) / 4);
-    margin-right: 30px;
-    background: var(--main-color);
-    border-radius: 0px 0px 4px 4px;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-      0px 2px 1px rgba(0, 0, 0, 0.2);
-
-    &:nth-child(4n) {
-      margin-right: 0;
-    }
-  }
 }
 
 .member-card {
-  align-content: center;
   padding-top: 30px;
-  padding-bottom: 30px;
-  padding-right: 32px;
-  padding-left: 32px;
+  padding-bottom: 24px;
+  text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .team-element:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .team-member-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+
+  .team-element {
+    width: calc((100% - 60px) / 2);
+    margin: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team-member-list {
+    flex-wrap: nowrap;
+  }
+
+  .member-card {
+    padding-bottom: 30px;
+  }
 }

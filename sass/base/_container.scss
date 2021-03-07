@@ -8,6 +8,19 @@
     align-items: center;
     justify-content: space-between;
   }
+
+  @media screen and (min-width: 768px) {
+    .footer & {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    .footer & {
+      flex-wrap: nowrap;
+    }
+  }
 }
 
 @media screen and (min-width: 480px) {
@@ -28,22 +41,3 @@
     width: 1200px;
   }
 }
-
-//   .header & {
-//     display: flex;
-//     align-items: center;
-//   }
-
-//   .hero & {
-//     text-align: center;
-//     padding: 200px 252px;
-//   }
-
-//   .activity & {
-//     text-align: center;
-//   }
-
-//   .team & {
-//     text-align: center;
-//   }
-// }
