@@ -48,12 +48,15 @@
     transform: translateX(-50%) translateY(0%);
   }
 
-  &-list {
-    margin-bottom: 302px;
+  &-wrapper {
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 
-    &-item:not(:last-child) {
-      margin-bottom: 32px;
-    }
+  &-list-item:not(:last-child) {
+    margin-bottom: 32px;
   }
 }
 

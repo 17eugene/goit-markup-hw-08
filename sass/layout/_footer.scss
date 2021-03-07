@@ -47,20 +47,20 @@
 @media screen and (min-width: 768px) {
   .social-footer-container {
     margin-bottom: 0;
-    margin-top: 5px;
   }
 
   .address-container {
     margin-right: 162px;
     margin-left: 76px;
   }
+
+  .footer-contacts-wrapper {
+    display: flex;
+    align-items: baseline;
+  }
 }
 
 @media screen and (min-width: 1200px) {
-  .footer {
-    max-height: 252px;
-  }
-
   .address {
     margin-bottom: 9px;
 
